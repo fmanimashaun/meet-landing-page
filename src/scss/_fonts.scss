@@ -1,0 +1,9 @@
+/* import fonts */
+
+/* Red Hat Display font*/
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url("../fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf") format('TrueType');
+}
+
+$primary-ff: 'Red Hat Display', sans-serif;

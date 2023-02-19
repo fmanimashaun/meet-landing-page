@@ -1,0 +1,64 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
+@use "./_mixin.scss" as mixins;
+@use "./_colors.scss";
+@use "_topography.scss" as fs;
+@use "_space" as space;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+  width: 100%;
+
+  &__banner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+
+    &-outer-wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      gap: 16.16px;
+      max-width: 303px;
+
+      &.left {
+        margin-left: calc(-1 * space.$banner-offset);
+      }
+
+      &.right {
+        margin-right: calc(-1 * space.$banner-offset);
+      }
+    }
+
+    &-inner-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 14.14px;
+
+      &.left {
+        &:nth-child(2n-1) {
+          transform: translateY(25%);
+        }
+      }
+
+      &.right {
+        &:nth-child(2n) {
+          transform: translateY(25%);
+        }
+      }
+    }
+
+    &-img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
