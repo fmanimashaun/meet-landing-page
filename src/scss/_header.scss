@@ -72,35 +72,12 @@
     }
 
     &-btn {
-      display: inline-block;
-      padding: 1rem 2.5rem;
-      font-size: 1rem;
-      line-height: 1.625;
-      font-weight: 900;
-      text-align: center;
-      border-radius: 1.8125rem;
-      color: colors.$light;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-
       &:first-child {
-        background-color: colors.$cyan;
-        span {
-          color: colors.$lightCyan;
-        }
-
-        &:hover {
-          background-color: colors.$cyanHover;
-        }
+        @include mixins.btn(colors.$cyan, colors.$cyanHover, colors.$lightCyan);
       }
 
       &:last-child {
-        background-color: colors.$purple;
-
-        &:hover {
-          background-color: colors.$purpleHover;
-        }
+        @include mixins.btn(colors.$purple, colors.$purpleHover);
       }
     }
 
