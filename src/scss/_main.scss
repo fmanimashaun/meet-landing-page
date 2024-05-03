@@ -14,14 +14,14 @@
     &::before {
       content: "01";
       position: absolute;
-      top: 0;
+      top: -56px;
       left: 50%;
       width: 56px;
       height: 56px;
       border-radius: 50%;
       background-color: colors.$light;
       border: 1px solid rgba($color: colors.$grey, $alpha: 0.25);
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
       text-align: center;
       line-height: 56px;
       font-size: 1rem;
@@ -32,7 +32,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: -112px;
+      top: -140px;
       left: 50%;
       width: 1px;
       height: 84px;
