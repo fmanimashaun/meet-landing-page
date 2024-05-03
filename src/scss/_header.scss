@@ -15,6 +15,7 @@
   overflow-x: clip;
   overflow-y: visible;
   padding-block: 48px;
+  margin-block-end: 175px;
 
   @media screen and (min-width: 768px) {
     gap: clamp(3.8125rem, 4.2143rem + -0.4464vi, 4rem);

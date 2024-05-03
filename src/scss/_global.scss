@@ -32,6 +32,7 @@ body {
   width: 100%;
   min-height: 100vh;
   margin-inline: auto;
+  min-width: 320px;
 
   &>* {
     max-width: 100%;
